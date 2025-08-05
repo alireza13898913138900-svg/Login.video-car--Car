@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "BillaBong";
+    src: url(./Styles/Fonts/Instagram\ Font\ @ValStudio\ www.valstudio.ir.ttf);
+}
+@font-face {
+    font-family: "vazir";
+    src: url(./Styles/Fonts/Vazirmatn-VariableFont_wght.ttf);
+}
+
+.name-log{
+    font-family: "BillaBong",Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid #ccc 1px;
+    width: 30%;  
+    height: 470px;
+    text-align: center;
+}
+.username , .Password{
+    display: flex;
+    justify-content: center;
+  width: 300px;
+  height: 38px;
+  border-radius: 3px;
+  border: gray solid 1px;
+  outline: none;
+}
+.or{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+    color: rgb(93, 83, 83);
+    margin-top: 30px;
+    border:  none;
+    border-top: solid #ccc;
+}
+.margin-Pass{
+    margin-top: 5px;
+}
+.Login{
+   display: flex;
+   justify-content: center;
+   width: 300px;
+   height:33px ;
+   margin-top: 20px;
+   border-radius: 7px;
+   background-color: #0095f6;
+   border: none;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+
+.Face{
+    color: rgb(0, 0, 255);
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.forgot-pass{
+    color: black;
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.account{
+    margin-top: 6px;
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+    border: solid #ccc 1px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+}
+.sign-forgot{
+    font-family: "vazir",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1090px) {
+    .page-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 90%;
+    }   
+    .username , .Password , .Login{
+        display: flex;
+        width: 90%;
+    }
+    .name-log{
+        font-size: 90%;
+        font-family: "BillaBong",Arial, Helvetica, sans-serif;
+    }
+    .account{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        
+    }
+
+}
+.p-or{
+    margin-top: -12px;
+    background-color: white;
+    width: 50px;
+}
